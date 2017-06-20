@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="MCTheme" parent="MCTheme.Base">
+
+    </style>
+
+    <!-- Base Theme for App -->
+    <style name="MCTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:textViewStyle">@style/MCTextView</item>
+        <item name="android:buttonStyle">@style/MCButton</item>
+        <item name="android:editTextStyle">@style/MCEditText</item>
+        <item name="actionModeBackground">@color/colorPrimaryDark</item>
+        <item name="actionModeSplitBackground">@color/colorPrimaryDark</item>
+        <item name="android:dialogTheme">@style/MCAlertDialogTheme</item>
+    </style>
+
+    <style name="MCAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MCTheme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textStyle">normal</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MCTheme.Transparent" parent="MCTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MCTextView" parent="android:Widget.TextView">
+
+    </style>
+
+    <!--Common Button -->
+    <style name="MCButton" parent="android:Widget.Holo.Button">
+
+    </style>
+
+    <!--Common EditText -->
+    <style name="MCEditText" parent="android:Widget.Holo.EditText">
+
+    </style>
+
+</resources>
