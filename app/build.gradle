@@ -53,6 +53,21 @@ dependencies {
 
     compile 'com.android.support:design:25.3.1'
 
+    //Firebase dependencies
+    compile 'com.google.firebase:firebase-core:10.2.4'
+
+    compile 'com.google.firebase:firebase-database:10.2.4'
+
+    compile 'com.google.firebase:firebase-crash:10.2.4'
+
+    compile 'com.google.firebase:firebase-auth:10.2.4'
+
+    compile 'com.google.firebase:firebase-messaging:10.2.4'
+
+    compile 'com.google.firebase:firebase-storage:10.2.4'
+
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+
     //Butterknife
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
@@ -66,3 +81,5 @@ dependencies {
     //Image Croppper
     compile 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
 }
+
+apply plugin: 'com.google.gms.google-services'

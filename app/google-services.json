@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "549636322928",
+    "firebase_url": "https://mayacare-1ca77.firebaseio.com",
+    "project_id": "mayacare-1ca77",
+    "storage_bucket": "mayacare-1ca77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549636322928:android:b28a54005b297ed2",
+        "android_client_info": {
+          "package_name": "com.felixtechlabs.mayacare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549636322928-rfql1hjcedn6kiql7u78b9ol62hqq403.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwhOuQEkT53AOCWoDPkJaOmMYkHbU9ZPY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549636322928:android:7b5da758a94c7842",
+        "android_client_info": {
+          "package_name": "com.felixtechlabs.mayacare.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549636322928-rfql1hjcedn6kiql7u78b9ol62hqq403.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwhOuQEkT53AOCWoDPkJaOmMYkHbU9ZPY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
