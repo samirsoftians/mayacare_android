@@ -1,8 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/bg_login"
+    android:padding="16dp">
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imv_mc_icon"
+        style="@style/MCicon" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        style="@style/MCEditText.LoginEditText"
+        android:layout_below="@+id/imv_mc_icon"
+        android:drawableLeft="@drawable/ic_user_email"
+        android:drawablePadding="8dp"
+        android:hint="@string/hint_email_or_mobile" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/MCEditText.LoginEditText"
+        android:layout_below="@+id/edt_username"
+        android:drawableLeft="@drawable/ic_user_password"
+        android:drawablePadding="8dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txt_forgotpassword"
+        style="@style/MCTextView.LoginTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_forgot_password"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/MCButton.LongButton.LoginButton"
+        android:layout_below="@+id/txt_forgotpassword"
+        android:text="@string/action_login" />
+
+    <TextView
+        android:id="@+id/txt_lbl_register_here"
+        style="@style/MCTextView.LoginTextView"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_account_yet"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_registation"
+        android:layout_marginTop="16dp"
+        style="@style/MCButton.LongButton.LoginButton"
+        android:layout_below="@+id/txt_lbl_register_here"
+        android:text="@string/action_register_here" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+     android:layout_above="@+id/txt_label_login_volunteer"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/txt_label_login_volunteer"
+        style="@style/MCTextView.LoginTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:text="@string/label_login_as_volunteer"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_click"
+        style="@style/MCTextView.LoginTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/txt_label_login_volunteer"
+        android:text="@string/action_click_here"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+</RelativeLayout>
