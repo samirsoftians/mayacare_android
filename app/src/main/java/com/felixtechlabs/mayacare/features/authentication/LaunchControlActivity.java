@@ -20,6 +20,7 @@ public class LaunchControlActivity extends MCBaseActivity {
         /*
          * Start the needed activity from here
          */
+        start(LoginActivity.class);
     }
 
     @Override

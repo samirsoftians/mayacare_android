@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MayaCare</string>
+    <string name="action_forgot_password">Forgot password?</string>
+    <string name="label_account_yet">Don\'t have an account Yet?</string>
+    <string name="label_login_as_volunteer">To Login as a Volunteer,</string>
+    <string name="action_click_here"><u>Click Here</u></string>
+    <string name="hint_email_or_mobile">Email id or Mobile</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_register_here">Register Here</string>
 </resources>
