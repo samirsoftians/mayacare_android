@@ -22,6 +22,8 @@
         <activity
             android:name=".features.authentication.LoginActivity"
             android:theme="@style/MCTheme.FullScreen" />
+
+        <activity android:name=".features.dashboard.DashboardActivity"/>
     </application>
 
 </manifest>
