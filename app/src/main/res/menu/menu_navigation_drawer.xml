@@ -80,4 +80,13 @@
             android:id="@+id/nav_item_contact_us"
             android:title="@string/title_contact_us"/>
     </group>
+
+    <group
+        android:id="@+id/grp12"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_logout"
+            android:title="@string/title_logout"/>
+    </group>
+
 </menu>

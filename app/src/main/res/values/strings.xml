@@ -4,7 +4,7 @@
     <string name="label_account_yet">Don\'t have an account Yet?</string>
     <string name="label_login_as_volunteer">To Login as a Volunteer,</string>
     <string name="action_click_here"><u>Click Here</u></string>
-    <string name="hint_email_or_mobile">Email id or Mobile</string>
+    <string name="hint_email_or_mobile">Email id</string>
     <string name="hint_password">Password</string>
     <string name="action_login">Login</string>
     <string name="action_register_here">Register Here</string>
@@ -19,4 +19,49 @@
     <string name="title_faq">F.A.Q\'s</string>
     <string name="title_enquiry_form">Enquiry Form</string>
     <string name="title_contact_us">Contact Us</string>
+    <string name="title_logout">Logout</string>
+
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="lbl_personal_details">Welcome to MayaCare.\nPlease Enter the following\ndetails to help us serve you better.</string>
+    <string name="hint_date_of_birth">Date Of Birth (dd/mm/yyyy)</string>
+    <string name="hint_address">Residential Address</string>
+    <string name="lbl_correspondence_details">Address Details</string>
+    <string name="hint_city">City</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_pin_code">Pin Code</string>
+    <string name="hint_telephone">Alternate Mobile Number</string>
+    <string name="action_next">Next</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_register">Register</string>
+    <string name="lbl_app_set_credentials">Set credentials for app</string>
+    <string name="hint_email_sign_up">Email Id</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+
+    <string name="progress_message_create_account">Creating account…</string>
+    <string name="progress_message_updating_profile">Updating profile…</string>
+    <string name="progress_message_sign_up">Completing registration…</string>
+    <string name="progress_message_loading_profile">Loading profile…</string>
+    <string name="permission_not_granted_msg">Permission required to work with photos, exiting app</string>
+
+
+    <string name="val_msg_valid_email">Enter valid email</string>
+    <string name="val_msg_empty_password">Enter password</string>
+    <string name="progress_message_login">Authenticating…</string>
+    <string name="progress_message_reset">Sending email…</string>
+    <string name="message_email_sent">"Reset password email sent, please check your inbox"</string>
+
+    <string name="dialog_title_forgot">Enter Email</string>
+    <string name="dialog_content_forgot">An Email will be sent with reset password instructions</string>
+    <string name="dialog_action_send">SEND</string>
+    <string name="dialog_hint_forgot">abc@gmail.com</string>
+
+    <string name="dialog_title_information">Information</string>
+    <string name="dialog_action_yes">Yes</string>
+    <string name="dialog_action_no">No</string>
+    <string name="dialog_message_logout">Do you want to logout of MayaCare App?</string>
+
+
 </resources>
