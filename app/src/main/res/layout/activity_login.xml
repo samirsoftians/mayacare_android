@@ -11,7 +11,7 @@
         style="@style/MCicon" />
 
     <EditText
-        android:id="@+id/edt_username"
+        android:id="@+id/edt_email"
         style="@style/MCEditText.LoginEditText"
         android:layout_below="@+id/imv_mc_icon"
         android:drawableLeft="@drawable/ic_user_email"
@@ -21,14 +21,14 @@
     <EditText
         android:id="@+id/edt_password"
         style="@style/MCEditText.LoginEditText"
-        android:layout_below="@+id/edt_username"
+        android:layout_below="@+id/edt_email"
         android:drawableLeft="@drawable/ic_user_password"
         android:drawablePadding="8dp"
         android:hint="@string/hint_password"
         android:inputType="textPassword" />
 
     <TextView
-        android:id="@+id/txt_forgotpassword"
+        android:id="@+id/txt_forgot_password"
         style="@style/MCTextView.LoginTextView"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/edt_password"
@@ -40,7 +40,7 @@
     <Button
         android:id="@+id/btn_login"
         style="@style/MCButton.LongButton.LoginButton"
-        android:layout_below="@+id/txt_forgotpassword"
+        android:layout_below="@+id/txt_forgot_password"
         android:text="@string/action_login" />
 
     <TextView
@@ -53,7 +53,7 @@
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/btn_registation"
+        android:id="@+id/btn_registration"
         android:layout_marginTop="16dp"
         style="@style/MCButton.LongButton.LoginButton"
         android:layout_below="@+id/txt_lbl_register_here"

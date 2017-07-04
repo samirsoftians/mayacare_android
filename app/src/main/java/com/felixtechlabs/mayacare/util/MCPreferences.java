@@ -86,12 +86,12 @@ public class MCPreferences {
     }
 
     public final class Keys {
-        public static final String IS_LOGGED_IN = "lccia.is.logged.in";
-        public static final String USER_UID = "lccia.user.uid";
-        public static final String USER_FULL_NAME = "lccia.user.full.name";
-        public static final String USER_EMAIL = "lccia.user.email";
-        public static final String USER_MOBILE = "lccia.user.mobile";
-        public static final String USER_PROFILE_PHOTO_URL = "lccia.user.profile.photo.url";
+        public static final String IS_LOGGED_IN = "mc.is.logged.in";
+        public static final String USER_UID = "mc.user.uid";
+        public static final String USER_FULL_NAME = "mc.user.full.name";
+        public static final String USER_EMAIL = "mc.user.email";
+        public static final String USER_MOBILE = "mc.user.mobile";
+        public static final String USER_PROFILE_PHOTO_URL = "mc.user.profile.photo.url";
     }
 
 }

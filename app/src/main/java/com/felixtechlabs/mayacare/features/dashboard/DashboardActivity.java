@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
 import com.felixtechlabs.mayacare.util.MCConstants;
+import com.felixtechlabs.mayacare.util.MCDialogUtility;
 
 import java.util.HashMap;
 
@@ -79,7 +80,11 @@ public class DashboardActivity extends MCBaseActivity {
             if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
                 mDrawerLayout.closeDrawer(GravityCompat.START);
             }
-            startActivity(getIntentForNav(item.getItemId()));
+            if (item.getItemId() == R.id.nav_item_logout) {
+                MCDialogUtility.getLogoutDialog(this).show();
+            } else {
+                startActivity(getIntentForNav(item.getItemId()));
+            }
             return true;
         });
 

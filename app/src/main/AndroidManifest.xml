@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.felixtechlabs.mayacare">
+          package="com.felixtechlabs.mayacare">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".app.MCApplication"
@@ -12,18 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/MCTheme">
 
-        <activity android:name=".features.authentication.LaunchControlActivity">
+        <activity
+            android:name=".features.authentication.LaunchControlActivity"
+            android:theme="@style/MCTheme.FullScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <activity
             android:name=".features.authentication.LoginActivity"
-            android:theme="@style/MCTheme.FullScreen" />
+            android:theme="@style/MCTheme.FullScreen"/>
 
         <activity android:name=".features.dashboard.DashboardActivity"/>
+
+        <activity android:name=".features.signup.SignUpActivity"/>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
     </application>
 
 </manifest>
