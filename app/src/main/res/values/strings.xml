@@ -8,4 +8,15 @@
     <string name="hint_password">Password</string>
     <string name="action_login">Login</string>
     <string name="action_register_here">Register Here</string>
+    <string name="title_home">Home</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_our_founders">Our Founders &amp; Advisers</string>
+    <string name="title_our_pledge">Our Pledge</string>
+    <string name="title_library">Door Step Library</string>
+    <string name="title_volunteers">Our Volunteers</string>
+    <string name="title_media">Media</string>
+    <string name="title_donors">Our Donors</string>
+    <string name="title_faq">F.A.Q\'s</string>
+    <string name="title_enquiry_form">Enquiry Form</string>
+    <string name="title_contact_us">Contact Us</string>
 </resources>

@@ -4,8 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
@@ -21,13 +25,21 @@ import butterknife.BindView;
  * Created by ftl on 30/6/17.
  */
 
-public class DashboardActivity extends MCBaseActivity{
+public class DashboardActivity extends MCBaseActivity {
+
+    @BindView(R.id.nav_drawer)
+    NavigationView mNavigationView;
+
+    @BindView(R.id.nav_drawer_layout)
+    DrawerLayout mDrawerLayout;
 
     @BindView(R.id.vip_dashboard_tabs)
     ViewPager vipTabs;
 
     @BindView(R.id.tbl_dashboard)
     TabLayout tblDashboard;
+
+    private HashMap<Integer, Intent> mNavItemMap;
 
     private DashboardPagerAdapter mDashboardTabsPagerAdapter;
 
@@ -38,9 +50,45 @@ public class DashboardActivity extends MCBaseActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setUpTabs();
+        init();
+        setUpNavDrawer();
     }
+
+    /**
+     * Initialization method
+     */
+    private void init() {
+        /*Navigation item map, add nav item id and corresponding
+        intent for activity to launch*/
+
+        mNavItemMap = new HashMap<>();
+
+    }
+
+    /**
+     * Method to setup navigation drawer
+     */
+    private void setUpNavDrawer() {
+        if (mToolbar != null) {
+            mToolbar.setNavigationIcon(R.drawable.ic_menu);
+            mToolbar.setNavigationOnClickListener(v -> mDrawerLayout.openDrawer(Gravity.START));
+        }
+        mNavigationView.setItemIconTintList(null);
+        mNavigationView.setNavigationItemSelectedListener(item -> {
+            if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+                mDrawerLayout.closeDrawer(GravityCompat.START);
+            }
+            startActivity(getIntentForNav(item.getItemId()));
+            return true;
+        });
+
+    }
+
+    private Intent getIntentForNav(Integer index) {
+        return mNavItemMap.get(index);
+    }
+
 
     private void setUpTabs() {
         mDashboardTabsPagerAdapter = new DashboardPagerAdapter(getSupportFragmentManager());
