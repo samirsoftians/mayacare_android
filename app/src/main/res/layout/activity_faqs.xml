@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar" />
+
+        <TextView
+            android:id="@+id/txt_faq_first_title"
+            android:layout_below="@+id/toolbar"
+            android:text="@string/title_first_faqs"
+            style="@style/MCTextView.FAQsTextView"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_faq_first_paragraph"
+            android:layout_below="@+id/txt_faq_first_title"
+            android:text="@string/first_paragraph_faqs"
+            style="@style/MCTextView.FAQsTextView"/>
+
+        <TextView
+            android:id="@+id/txt_faq_second_title"
+            android:layout_below="@+id/txt_faq_first_paragraph"
+            android:text="@string/title_second_faqs"
+            style="@style/MCTextView.FAQsTextView"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_faq_second_paragraph"
+            android:layout_below="@+id/txt_faq_second_title"
+            android:text="@string/second_paragraph_faqs"
+            style="@style/MCTextView.FAQsTextView" />
+
+        <TextView
+            android:id="@+id/txt_faq_third_title"
+            android:layout_below="@+id/txt_faq_second_paragraph"
+            android:text="@string/title_third_faqs"
+            style="@style/MCTextView.FAQsTextView"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_faq_third_paragraph"
+            android:layout_below="@+id/txt_faq_third_title"
+            android:text="@string/third_paragraph_faqs"
+            style="@style/MCTextView.FAQsTextView" />
+
+        <TextView
+            android:id="@+id/txt_faq_four_title"
+            android:layout_below="@+id/txt_faq_third_paragraph"
+            android:text="@string/title_four_faqs"
+            style="@style/MCTextView.FAQsTextView"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_faq_four_paragraph"
+            android:layout_below="@+id/txt_faq_four_title"
+            android:text="@string/four_paragraph_faqs"
+            android:layout_marginBottom="16dp"
+            style="@style/MCTextView.FAQsTextView" />
+
+    </RelativeLayout>
+</ScrollView>

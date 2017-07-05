@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/txt_donate"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="16dp"
+        android:text="@string/label_donate" />
+
+    <TextView
+        android:id="@+id/txt_lbl_bank_name"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_below="@+id/txt_donate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_bank_name" />
+
+    <TextView
+        android:id="@+id/txt_lbl_account_no"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_below="@+id/txt_lbl_bank_name"
+        android:layout_marginLeft="30dp"
+        android:text="@string/label_account_no" />
+
+    <TextView
+        android:id="@+id/txt_lbl_account_adrs"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_below="@+id/txt_lbl_account_no"
+        android:layout_marginLeft="30dp"
+        android:text="@string/label_account_address" />
+
+    <TextView
+        android:id="@+id/txt_lbl_code"
+        android:layout_below="@+id/txt_lbl_account_adrs"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_ifsc_code" />
+
+
+    <TextView
+        android:id="@+id/txt_bank_name"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_toRightOf="@+id/txt_lbl_bank_name"
+        android:layout_below="@+id/txt_donate"
+        android:layout_marginTop="20dp"
+        android:text="@string/name_bank_name"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/txt_account_no"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_toRightOf="@+id/txt_lbl_account_no"
+        android:layout_below="@+id/txt_bank_name"
+        android:layout_marginLeft="20dp"
+        android:text="@string/number_account_no" />
+
+    <TextView
+        android:id="@+id/txt_account_adrs"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_toRightOf="@+id/txt_lbl_account_adrs"
+        android:layout_below="@+id/txt_account_no"
+        android:layout_marginLeft="20dp"
+        android:text="@string/address_account_address" />
+
+    <TextView
+        android:id="@+id/xt_code"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_toRightOf="@+id/txt_lbl_code"
+        android:layout_below="@+id/txt_account_adrs"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/code_ifsc_code" />
+
+    <TextView
+        android:id="@+id/txt_lbl_query"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_query"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/txt_emailid"
+        style="@style/MCTextView.DonateTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:text="@string/action_email"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

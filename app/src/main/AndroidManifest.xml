@@ -29,11 +29,23 @@
 
         <activity android:name=".features.dashboard.DashboardActivity"/>
 
+        <activity android:name=".features.staticscreens.AboutUsActivity"/>
         <activity android:name=".features.signup.SignUpActivity"/>
 
+        <activity android:name=".features.staticscreens.OurPledgeActivity"/>
+
+        <activity android:name=".features.staticscreens.FAQsActivity"/>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
+
+        <activity android:name=".features.staticscreens.ContactUsActivity"/>
+
+        <activity android:name=".features.staticscreens.DoorStepLibraryActivity"/>
+
+        <activity android:name=".features.staticscreens.OurDonorActivity"/>
+
+        <activity android:name=".features.staticscreens.DonateActivity"/>
 
     </application>
 

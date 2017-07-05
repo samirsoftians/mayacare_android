@@ -8,6 +8,37 @@
     <string name="hint_password">Password</string>
     <string name="action_login">Login</string>
     <string name="action_register_here">Register Here</string>
+
+    <!--<string "our_pledge"-->
+    <string name="page_our_pledge">
+        Maya Care aims to fulfil the growing need for
+        enhancing the comfort of senior citizens living in India.
+        During our interactions with senior citizens,
+        each of us at Maya CARE pledge to conduct our
+        duties based on these three simple values:
+        I don the identity of a Maya CARE associate with pride.
+        With the faith that today
+        Will be a turning point in my life
+        The day I chose to assume responsibility for a future
+        Of new learning, self-reliance and dignity
+        On this date, I pledge to CARE with:</string>
+
+    <string name="title_integrity">Integrity </string>
+
+    <string name="integrity_paragraph">
+        Be honest in every transaction.
+        If something has been missed out,
+        admit our mistake and rectify it at the earliest. </string>
+
+    <string name="title_responsibility">Responsibility</string>
+
+    <string name="responsibility_paragraph">
+        Ensure that the task undertaken
+        is completed in the time frame committed.
+        If the task cannot be accomplished due to an unavoidable reason,
+        inform the service recipient of the same.</string>
+
+    <string name="title_patience">Patience</string>
     <string name="title_home">Home</string>
     <string name="title_about_us">About Us</string>
     <string name="title_our_founders">Our Founders &amp; Advisers</string>
@@ -40,12 +71,38 @@
     <string name="hint_email_sign_up">Email Id</string>
     <string name="hint_confirm_password">Confirm Password</string>
 
+    <string name="patience_paragraph">
+        Treat each service recipient with respect and make a
+        sincere effort to understand the expectation in each transaction.</string>
+
+
+    <!--<string "About_us"-->
     <string name="progress_message_create_account">Creating account…</string>
     <string name="progress_message_updating_profile">Updating profile…</string>
     <string name="progress_message_sign_up">Completing registration…</string>
     <string name="progress_message_loading_profile">Loading profile…</string>
     <string name="permission_not_granted_msg">Permission required to work with photos, exiting app</string>
 
+
+    <string name="about_us_first_paragraph">
+        Founded in 2009, Maya CARE is supported through
+        personal funds by working professionals – Abhay
+        Joshi and his wife Manjiri (Gokhale) Joshi. Maya
+        CARE services are available FREE of charge. However,
+        appreciation in the form of voluntary donations
+        from individuals/groups/companies is welcome.</string>
+
+    <string name="about_us_second_paragraph">
+        Maya CARE has a network of co-ordinators and
+        volunteers running help lines in Mumbai and Pune.
+        Maya CARE volunteers include college students,
+        homemakers, working professionals and active senior
+        citizens who visit senior citizens in their own homes
+        to provide services. None of us can ever replace a family
+        member. But as professionals struggle to meet the demands
+        of an active work life, each of us at Maya CARE have pledged
+        to make up for their absence with integrity,
+        responsibility and patience.</string>
 
     <string name="val_msg_valid_email">Enter valid email</string>
     <string name="val_msg_empty_password">Enter password</string>
@@ -64,4 +121,114 @@
     <string name="dialog_message_logout">Do you want to logout of MayaCare App?</string>
 
 
+
+    <!--<string "F.A.Q',s"-->
+    <string name="title_first_faqs">
+        Does Maya Care provide nurses/cooks?
+        Can Maya Care guarantee emergency medical care?</string>
+
+    <string name="first_paragraph_faqs">
+        Maya CARE does not provide emergency,
+        ayah/nursing or domestic servant services.
+        Maya CARE volunteers are educated working/retired professionals,
+        homemakers or students who gladly perform all the activities a family
+        member would. Thus, Maya CARE volunteers sit with patients in hospital/at home, read to them,
+        give medicine/help with physiotherapy exercises under medical advice.
+        For a comprehensive list of services, click  here .
+        Please note that these  terms and conditions
+        are part of our attempt to ensure your safety
+        during your association with Maya Care.</string>
+
+    <string name="title_second_faqs">
+        Does Maya Care provide services to
+        disabled persons who are not senior citizens?</string>
+
+    <string name="second_paragraph_faqs">
+    Yes, disabled persons could also avail of our services.</string>
+
+    <string name="title_third_faqs">
+        What do I pay Maya CARE?</string>
+
+    <string name="third_paragraph_faqs">
+        Maya CARE services are available FREE of charge. However,
+        if you wish to make a voluntary donation to support the cause of Maya CARE,
+        payment is accepted via bank transfer or account/payee
+        cheques in the name of ‘Maya Care Foundation’ only.</string>
+
+       <string name="title_four_faqs">
+           How can I trust the service professional visiting my home?</string>
+
+    <string name="four_paragraph_faqs">
+        It is mandatory for Maya CARE volunteers to carry a photo ID card bearing
+        their name and the Maya Care logo. In case a volunteer is not carrying his/her
+        I-card, kindly call our helpline. In the event that this was to occur,
+        we apologize for the inconvenience caused to you. Please note that these
+        terms and conditions  are part of our attempt to ensure your safety during
+        your association with Maya Care. Maya Care volunteers are expected to conduct
+        interactions within the guest reception area/main door of the recipients’
+        registered address. Recipients are requested to refrain from requesting volunteers
+        to enter any other area of their homes or assist in any other tasks outside the purview
+        of Maya CARE services.</string>
+
+    <!--<string "Contact Us"-->
+    <string name="label_india">India</string>
+    <string name="label_regester">Registered Office:</string>
+    <string name="pune_address_first_line">1214 Shukravar Peth,</string>
+    <string name="pune_address_second_line">Subhash Nagar,</string>
+    <string name="pune_address_third_line">Lane no 4, Pune 411002.</string>
+    <string name="label_call">Call us at :</string>
+    <string name="label_mumbai_contact">Mumbai : </string>
+    <string name="label_contact_first">9594073475,</string>
+    <string name="label_contact_second">9594063475</string>
+    <string name="label_pune_contact">Pune     : </string>
+    <string name="label_contact_pune_first">9552510411,</string>
+    <string name="label_contact_pune_second">9552510400</string>
+    <string name="label_uk">United Kingdom</string>
+    <string name="uk_adrs_first_line">11 Merthen Grove,</string>
+    <string name="uk_adrs_second_line">Tattenhoe, Milton Keynes,</string>
+    <string name="uk_adrs_third_line">Buckinghamshire,</string>
+    <string name="uk_adrs_four_line">MK 43AX.</string>
+    <string name="label_emailus">Email Us :</string>
+    <string name="label_email">Email us at :</string>
+    <string name="label_email_id"><u>service@mayacare.com</u></string>
+
+    <!--<string "Door step Library"-->
+    <string name="label_door_step_lib">
+        Maya CARE offers door-step library services for senior citizens
+        of Pune and Mumbai. The door-step library subscription is available
+        at a monthly service charge of Rs 400/- along with a returnable deposit
+        and fees of individual libraries suggested by individual senior citizens.
+        Maya CARE is not affiliated to any specific libraries.</string>
+
+    <!--<string "Our Donor"-->
+
+    <string name="label_our_donor">
+        Our Donor makes it possible for us to Function.
+        We are really thanksfull to them for their support.</string>
+
+    <string name="label_forbes_marshall">Forbes Marshll Foundation</string>
+    <string name="label_felix">Felix Tech Labs, Pune</string>
+    <string name="label_Donate_us">To Donate to Us,</string>
+    <string name="action_click"><u>Click Here</u></string>
+
+
+    <!--<string "Donate"-->
+
+    <string name="label_donate">
+        If you to Make a Donation, you can
+        transfer the money to our Bank Account.</string>
+    <string name="label_bank_name">Bank Name  : </string>
+    <string name="label_account_no">A/C Number : </string>
+    <string name="label_account_address">A/C Address : </string>
+    <string name="label_ifsc_code">IFSC Code  : </string>
+    <string name="name_bank_name">Axis Bank </string>
+    <string name="number_account_no">10055228899</string>
+    <string name="address_account_address">Pimpri, Pune</string>
+    <string name="code_ifsc_code">IAXIS00234</string>
+    <string name="label_query">If you have any querres, write to us at</string>
+    <string name="action_email">  <u>service@mayacare.com</u></string>
+
 </resources>
+
+
+

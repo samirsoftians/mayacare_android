@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <TextView
+            android:id="@+id/txt_india"
+            android:layout_below="@id/toolbar"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:textSize="24dp"
+            android:text="@string/label_india"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txt_reg_address"
+            android:layout_below="@id/txt_india"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:textSize="20dp"
+            android:text="@string/label_regester"/>
+
+        <TextView
+            android:id="@+id/txt_first_line"
+            android:layout_below="@id/txt_reg_address"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/pune_address_first_line" />
+
+        <TextView
+            android:id="@+id/txt_second_line"
+            android:layout_below="@id/txt_first_line"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/pune_address_second_line" />
+
+        <TextView
+            android:id="@+id/txt_third_line"
+            android:layout_below="@id/txt_second_line"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/pune_address_third_line" />
+
+        <TextView
+            android:id="@+id/txt_call_us"
+            android:layout_below="@id/txt_third_line"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:textSize="20dp"
+            android:text="@string/label_call"/>
+
+        <TextView
+            android:id="@+id/txt_mumbai_contact"
+            android:layout_below="@id/txt_call_us"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_mumbai_contact" />
+
+        <TextView
+            android:id="@+id/txt_contact_first"
+            android:layout_below="@+id/txt_call_us"
+            android:layout_centerHorizontal="true"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_contact_first" />
+
+        <TextView
+            android:id="@+id/txt_contact_second"
+            android:layout_below="@+id/txt_contact_first"
+            android:layout_centerHorizontal="true"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_contact_second" />
+
+        <TextView
+            android:id="@+id/txt_pune_contact"
+            android:layout_below="@id/txt_contact_second"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_pune_contact" />
+
+        <TextView
+            android:id="@+id/txt_contact_pune_first"
+            android:layout_below="@+id/txt_contact_second"
+            android:layout_centerHorizontal="true"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_contact_pune_first"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/txt_contact_pune_second"
+            android:layout_below="@+id/txt_contact_pune_first"
+            android:layout_centerHorizontal="true"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_contact_pune_second"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/txt_uk"
+            android:layout_below="@id/txt_contact_pune_second"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:textSize="24dp"
+            android:text="@string/label_uk"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txt_uk_reg_address"
+            android:layout_below="@id/txt_uk"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:textSize="20dp"
+            android:text="@string/label_regester" />
+
+        <TextView
+            android:id="@+id/txt_adrs_first_line"
+            android:layout_below="@id/txt_uk_reg_address"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/uk_adrs_first_line" />
+
+        <TextView
+            android:id="@+id/txt_adrs_second_line"
+            android:layout_below="@id/txt_adrs_first_line"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/uk_adrs_second_line"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/txt_adrs_third_line"
+            android:layout_below="@id/txt_adrs_second_line"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/uk_adrs_third_line" />
+
+        <TextView
+            android:id="@+id/txt_adrs_four_line"
+            android:layout_below="@id/txt_adrs_third_line"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/uk_adrs_four_line" />
+
+        <TextView
+            android:id="@+id/txt_emailus"
+            android:layout_below="@id/txt_adrs_four_line"
+            android:textColor="@color/colorAccent"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_emailus"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txt_emil"
+            android:layout_below="@id/txt_emailus"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_email" />
+
+        <TextView
+            android:id="@+id/txt_email_id"
+            android:layout_below="@id/txt_emailus"
+            android:layout_toRightOf="@+id/txt_emil"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="20dp"
+            style="@style/MCTextView.ContactUsTextView"
+            android:text="@string/label_email_id" />
+    </RelativeLayout>
+
+</ScrollView>
