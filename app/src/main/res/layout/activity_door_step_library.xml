@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/txt_door_step_lib"
+        android:text="@string/label_door_step_lib"
+        android:textSize="20dp"
+        android:layout_margin="25dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_door_stap_lib"
+        android:src="@drawable/door_stap_lib"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txt_door_step_lib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

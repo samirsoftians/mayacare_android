@@ -24,6 +24,21 @@
             android:theme="@style/MCTheme.FullScreen" />
 
         <activity android:name=".features.dashboard.DashboardActivity"/>
+
+        <activity android:name=".features.staticscreens.AboutUsActivity"/>
+
+        <activity android:name=".features.staticscreens.OurPledgeActivity"/>
+
+        <activity android:name=".features.staticscreens.FAQsActivity"/>
+
+        <activity android:name=".features.staticscreens.ContactUsActivity"/>
+
+        <activity android:name=".features.staticscreens.DoorStepLibraryActivity"/>
+
+        <activity android:name=".features.staticscreens.OurDonorActivity"/>
+
+        <activity android:name=".features.staticscreens.DonateActivity"/>
+
     </application>
 
 </manifest>
