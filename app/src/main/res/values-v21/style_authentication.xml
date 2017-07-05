@@ -53,6 +53,26 @@
     </style>
 
     <!--OurDOnors page -->
+
+    <style name="MCEditText.SignUpScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SignUpTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="SignUpRadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
     <style name="MCTextView.OurDonorsTextView">
         <item name="android:textSize">20dp</item>
         <item name="android:layout_marginTop">16dp</item>

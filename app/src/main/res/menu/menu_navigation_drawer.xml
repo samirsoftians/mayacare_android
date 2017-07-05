@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_about_us"
+            android:title="@string/title_about_us"/>
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_founders"
+            android:title="@string/title_our_founders"/>
+    </group>
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_pledge"
+            android:title="@string/title_our_pledge"/>
+    </group>
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_door_step"
+            android:title="@string/title_library"/>
+    </group>
+
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_our_volunteers"
+            android:title="@string/title_volunteers"/>
+    </group>
+
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_media"
+            android:title="@string/title_media"/>
+    </group>
+
+    <group
+        android:id="@+id/grp8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_donors"
+            android:title="@string/title_donors"/>
+    </group>
+
+    <group
+        android:id="@+id/grp9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_faq"
+            android:title="@string/title_faq"/>
+    </group>
+
+    <group
+        android:id="@+id/grp10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_enquiry"
+            android:title="@string/title_enquiry_form"/>
+    </group>
+
+    <group
+        android:id="@+id/grp11"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_contact_us"
+            android:title="@string/title_contact_us"/>
+    </group>
+
+    <group
+        android:id="@+id/grp12"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_logout"
+            android:title="@string/title_logout"/>
+    </group>
+
+</menu>
