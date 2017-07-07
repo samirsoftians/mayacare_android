@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_lbl_full_name"
+                style="@style/MCTextView.RequestLabel"
+                android:text="Full Name"/>
+
+            <TextView
+                android:id="@+id/txt_full_name"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_full_name"
+                android:text="Rohan Peshkar"/>
+
+            <TextView
+                android:id="@+id/txt_lbl_mobile_number"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_full_name"
+                android:text="Mobile Number"/>
+
+            <TextView
+                android:id="@+id/txt_mobile_number"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_mobile_number"
+                android:text="9730333946"/>
+
+
+            <TextView
+                android:id="@+id/txt_lbl_email"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_mobile_number"
+                android:text="Email"/>
+
+            <TextView
+                android:id="@+id/txt_email"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_email"
+                android:text="rohan@test.com"/>
+
+
+            <TextView
+                android:id="@+id/txt_lbl_address"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_email"
+                android:text="Address"/>
+
+            <TextView
+                android:id="@+id/txt_address"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_address"
+                android:text="Baner"/>
+
+            <TextView
+                android:id="@+id/txt_lbl_services"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_address"
+                android:text="Selected Services"/>
+
+            <TextView
+                android:id="@+id/txt_services"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_services"
+                android:text="Aide,Bank"/>
+
+            <TextView
+                android:id="@+id/txt_lbl_date_time"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_services"
+                android:text="Date And Time"/>
+
+            <TextView
+                android:id="@+id/txt_date_time"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_date_time"
+                android:text="22/07/2017 12 PM"/>
+
+            <TextView
+                android:id="@+id/txt_lbl_comments"
+                style="@style/MCTextView.RequestLabel"
+                android:layout_below="@+id/txt_date_time"
+                android:text="Special Request"/>
+
+            <TextView
+                android:id="@+id/txt_comments"
+                style="@style/MCTextView.RequestLabelValue"
+                android:layout_below="@+id/txt_lbl_comments"
+                android:text="None"/>
+
+            <Button
+                android:id="@+id/btn_edit"
+                style="@style/MCButton.LongButton"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/txt_comments"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/m_16"
+                android:layout_marginTop="@dimen/m_16"
+                android:drawableLeft="@drawable/ic_drawable_left_compat"
+                android:paddingRight="5dp"
+                android:text="Edit"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/MCButton.LongButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_comments"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/m_16"
+                android:layout_marginTop="@dimen/m_16"
+                android:drawableRight="@drawable/ic_drawable_right_compat"
+                android:paddingLeft="5dp"
+                android:text="Confirm"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

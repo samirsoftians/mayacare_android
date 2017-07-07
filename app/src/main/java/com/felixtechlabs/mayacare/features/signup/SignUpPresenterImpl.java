@@ -168,7 +168,7 @@ public class SignUpPresenterImpl implements SignUpPresenter {
                 .addOnCompleteListener(dataUpdateTask -> {
                     mAppSignInDetailsFragmentView.dismissProgress();
                     if (dataUpdateTask.isSuccessful()) {
-                        MCUtility.saveUserDetails(mContext, mConsumer);
+                        MCUtility.saveConsumer(mContext, mConsumer);
                         mSignUpActivityView.goToDashboard();
                     } else {
                         mAppSignInDetailsFragmentView.dismissProgress();

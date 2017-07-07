@@ -121,7 +121,6 @@
     <string name="dialog_message_logout">Do you want to logout of MayaCare App?</string>
 
 
-
     <!--<string "F.A.Q',s"-->
     <string name="title_first_faqs">
         Does Maya Care provide nurses/cooks?
@@ -155,7 +154,7 @@
         payment is accepted via bank transfer or account/payee
         cheques in the name of ‘Maya Care Foundation’ only.</string>
 
-       <string name="title_four_faqs">
+    <string name="title_four_faqs">
            How can I trust the service professional visiting my home?</string>
 
     <string name="four_paragraph_faqs">
@@ -227,6 +226,19 @@
     <string name="code_ifsc_code">IAXIS00234</string>
     <string name="label_query">If you have any querres, write to us at</string>
     <string name="action_email">  <u>service@mayacare.com</u></string>
+
+    <string name="dialog_title_services">Select Services</string>
+    <string name="dialog_action_select">SELECT</string>
+
+    <string-array name="array_services">
+        <item>Bank</item>
+        <item>Domestic</item>
+        <item>IT</item>
+        <item>Medical</item>
+        <item>Aide</item>
+        <item>Utility</item>
+        <item>Directory Services</item>
+    </string-array>
 
 </resources>
 

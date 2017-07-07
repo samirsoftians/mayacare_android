@@ -9,6 +9,9 @@ import com.felixtechlabs.mayacare.R;
 
 public class MCConstants {
 
+
+    public static final String KEY_REQUEST_OBJECT = "request.object";
+
     public static final int LAUNCH_CONTROL_DELAY_MILLIS = 800;
     public static final int[] DASHBOARD_TAB_ICONS = new int[]{
 
@@ -22,7 +25,7 @@ public class MCConstants {
             "My Requests",
             "Profile"
 
-     };
+    };
 
 
 }

@@ -80,7 +80,7 @@ public class LoginPresenterImpl implements LoginPresenter {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Consumer consumer = dataSnapshot.getValue(Consumer.class);
-                        MCUtility.saveUserDetails(mContext, consumer);
+                        MCUtility.saveConsumer(mContext, consumer);
                         if (mLoginView != null && mContext != null) {
                             mLoginView.dismissProgress();
                             mLoginView.handleLoginSuccess();
