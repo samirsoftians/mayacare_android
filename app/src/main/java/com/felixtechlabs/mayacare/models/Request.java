@@ -1,5 +1,6 @@
 package com.felixtechlabs.mayacare.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -7,7 +8,7 @@ import java.util.ArrayList;
  * Created by rohan on 4/7/17.
  */
 
-public class Request {
+public class Request implements Serializable {
 
     private int requestId;
 

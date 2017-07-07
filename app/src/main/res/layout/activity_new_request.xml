@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:padding="@dimen/m_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_lbl_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter the details of the Person for which you would like to Request a Volunteer"
+                android:textColor="@color/colorGrey"
+                android:textSize="18sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_full_name"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/txt_lbl_request"
+                android:layout_marginTop="@dimen/m_16">
+
+                <EditText
+                    android:id="@+id/edt_full_name"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:ellipsize="end"
+                    android:hint="@string/hint_full_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_mobile_number"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_full_name">
+
+                <EditText
+                    android:id="@+id/edt_mobile_number"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:hint="@string/hint_mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_email"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_mobile_number">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:hint="@string/hint_email_sign_up"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_residential_address"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_email"
+                android:layout_marginTop="@dimen/m_16">
+
+                <EditText
+                    android:id="@+id/edt_residential_address"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/hint_address"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_services"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_residential_address">
+
+                <EditText
+                    android:id="@+id/edt_services"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:focusable="false"
+                    android:hint="Select Services"
+                    android:inputType="text"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_date"
+                style="@style/SignUpTextInputLayout"
+                android:layout_width="180dp"
+                android:layout_below="@+id/il_services">
+
+                <EditText
+                    android:id="@+id/edt_date"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:focusable="false"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_time"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_services"
+                android:layout_toRightOf="@+id/il_date">
+
+
+                <EditText
+                    android:id="@+id/edt_time"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:focusable="false"
+                    android:hint="Time"
+                    android:inputType="text"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_comments"
+                style="@style/SignUpTextInputLayout"
+                android:layout_below="@+id/il_date"
+                android:layout_marginTop="@dimen/m_16">
+
+                <EditText
+                    android:id="@+id/edt_comments"
+                    style="@style/MCEditText.SignUpScreen"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="Any Special Request(Optional)"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/MCButton.LongButton.LoginButton"
+                android:layout_below="@+id/il_comments"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Next"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

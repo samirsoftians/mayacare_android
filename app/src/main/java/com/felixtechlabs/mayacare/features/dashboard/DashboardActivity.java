@@ -15,6 +15,12 @@ import android.widget.TextView;
 
 import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.AboutUsActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.ContactUsActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.DoorStepLibraryActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.FAQsActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.OurDonorActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.OurPledgeActivity;
 import com.felixtechlabs.mayacare.util.MCConstants;
 import com.felixtechlabs.mayacare.util.MCDialogUtility;
 
@@ -64,6 +70,12 @@ public class DashboardActivity extends MCBaseActivity {
         intent for activity to launch*/
 
         mNavItemMap = new HashMap<>();
+        mNavItemMap.put(R.id.nav_item_about_us, getNewIntent(AboutUsActivity.class));
+        mNavItemMap.put(R.id.nav_item_pledge, getNewIntent(OurPledgeActivity.class));
+        mNavItemMap.put(R.id.nav_item_contact_us, getNewIntent(ContactUsActivity.class));
+        mNavItemMap.put(R.id.nav_item_door_step, getNewIntent(DoorStepLibraryActivity.class));
+        mNavItemMap.put(R.id.nav_item_donors, getNewIntent(OurDonorActivity.class));
+        mNavItemMap.put(R.id.nav_item_faq, getNewIntent(FAQsActivity.class));
 
     }
 
