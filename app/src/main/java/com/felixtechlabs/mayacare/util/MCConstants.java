@@ -9,6 +9,9 @@ import com.felixtechlabs.mayacare.R;
 
 public class MCConstants {
 
+
+    public static final String KEY_REQUEST_OBJECT = "request.object";
+
     public static final int LAUNCH_CONTROL_DELAY_MILLIS = 800;
     public static final int[] DASHBOARD_TAB_ICONS = new int[]{
 
@@ -22,7 +25,19 @@ public class MCConstants {
             "My Requests",
             "Profile"
 
-     };
+    };
+
+    public static final class RequestStatusInt {
+        public static final int PENDING = 0;
+        public static final int ASSIGNED = 1;
+        public static final int COMPLETED = 2;
+    }
+
+    public static final class RequestStatus {
+        public static final String PENDING = "Pending";
+        public static final String ASSIGNED = "Assigned";
+        public static final String COMPLETED = "Completed";
+    }
 
 
 }

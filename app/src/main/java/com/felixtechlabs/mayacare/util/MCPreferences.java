@@ -91,6 +91,7 @@ public class MCPreferences {
         public static final String USER_FULL_NAME = "mc.user.full.name";
         public static final String USER_EMAIL = "mc.user.email";
         public static final String USER_MOBILE = "mc.user.mobile";
+        public static final String USER_ADDRESS = "mc.user.address";
         public static final String USER_PROFILE_PHOTO_URL = "mc.user.profile.photo.url";
     }
 

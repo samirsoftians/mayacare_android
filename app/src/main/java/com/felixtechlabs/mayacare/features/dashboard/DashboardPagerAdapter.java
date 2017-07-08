@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.felixtechlabs.mayacare.features.dashboard.requests.RequestsFragment;
+
 import java.util.ArrayList;
 
 /**
@@ -20,7 +22,7 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         mFragmentsList = new ArrayList<>();
         mFragmentsList.add(new HomeFragment());
-        mFragmentsList.add(new MyRequestFragment());
+        mFragmentsList.add(new RequestsFragment());
         mFragmentsList.add(new ProfileFragmant());
 
         mFragmentTitleList = new ArrayList<>();

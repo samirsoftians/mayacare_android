@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MayaCare</string>
+    <string name="app_name">MayaCARE</string>
     <string name="action_forgot_password">Forgot password?</string>
     <string name="label_account_yet">Don\'t have an account Yet?</string>
     <string name="label_login_as_volunteer">To Login as a Volunteer,</string>
@@ -47,7 +47,7 @@
     <string name="title_volunteers">Our Volunteers</string>
     <string name="title_media">Media</string>
     <string name="title_donors">Our Donors</string>
-    <string name="title_faq">F.A.Q\'s</string>
+    <string name="title_faq">F.A.Q</string>
     <string name="title_enquiry_form">Enquiry Form</string>
     <string name="title_contact_us">Contact Us</string>
     <string name="title_logout">Logout</string>
@@ -121,7 +121,6 @@
     <string name="dialog_message_logout">Do you want to logout of MayaCare App?</string>
 
 
-
     <!--<string "F.A.Q',s"-->
     <string name="title_first_faqs">
         Does Maya Care provide nurses/cooks?
@@ -155,7 +154,7 @@
         payment is accepted via bank transfer or account/payee
         cheques in the name of ‘Maya Care Foundation’ only.</string>
 
-       <string name="title_four_faqs">
+    <string name="title_four_faqs">
            How can I trust the service professional visiting my home?</string>
 
     <string name="four_paragraph_faqs">
@@ -173,23 +172,15 @@
     <!--<string "Contact Us"-->
     <string name="label_india">India</string>
     <string name="label_regester">Registered Office:</string>
-    <string name="pune_address_first_line">1214 Shukravar Peth,</string>
-    <string name="pune_address_second_line">Subhash Nagar,</string>
-    <string name="pune_address_third_line">Lane no 4, Pune 411002.</string>
+    <string name="pune_address_first_line">1214 Shukravar Peth, Subhash Nagar, Lane no 4, Pune 411002.</string>
     <string name="label_call">Call us at :</string>
-    <string name="label_mumbai_contact">Mumbai : </string>
-    <string name="label_contact_first">9594073475,</string>
-    <string name="label_contact_second">9594063475</string>
-    <string name="label_pune_contact">Pune     : </string>
-    <string name="label_contact_pune_first">9552510411,</string>
-    <string name="label_contact_pune_second">9552510400</string>
+    <string name="label_mumbai_contact">Mumbai</string>
+    <string name="label_contact_first">9594073475/9594063475</string>
+    <string name="label_pune_contact">Pune</string>
+    <string name="label_contact_pune_first">9552510411/9552510400</string>
     <string name="label_uk">United Kingdom</string>
-    <string name="uk_adrs_first_line">11 Merthen Grove,</string>
-    <string name="uk_adrs_second_line">Tattenhoe, Milton Keynes,</string>
-    <string name="uk_adrs_third_line">Buckinghamshire,</string>
-    <string name="uk_adrs_four_line">MK 43AX.</string>
-    <string name="label_emailus">Email Us :</string>
-    <string name="label_email">Email us at :</string>
+    <string name="uk_adrs_first_line">11 Merthen Grove, Tattenhoe, Milton Keynes, Buckinghamshire, MK 43AX.</string>
+    <string name="label_emailus">Email Us At :</string>
     <string name="label_email_id"><u>service@mayacare.com</u></string>
 
     <!--<string "Door step Library"-->
@@ -204,10 +195,10 @@
 
     <string name="label_our_donor">
         Our Donor makes it possible for us to Function.
-        We are really thanksfull to them for their support.</string>
+        We are really thankful to them for their support.</string>
 
-    <string name="label_forbes_marshall">Forbes Marshll Foundation</string>
-    <string name="label_felix">Felix Tech Labs, Pune</string>
+    <string name="label_forbes_marshall">Forbes Marshall Foundation</string>
+    <string name="label_felix">Felix TechLabs LLP, Pune</string>
     <string name="label_Donate_us">To Donate to Us,</string>
     <string name="action_click"><u>Click Here</u></string>
 
@@ -215,7 +206,7 @@
     <!--<string "Donate"-->
 
     <string name="label_donate">
-        If you to Make a Donation, you can
+        If you want to make a Donation, you can
         transfer the money to our Bank Account.</string>
     <string name="label_bank_name">Bank Name  : </string>
     <string name="label_account_no">A/C Number : </string>
@@ -225,7 +216,7 @@
     <string name="number_account_no">10055228899</string>
     <string name="address_account_address">Pimpri, Pune</string>
     <string name="code_ifsc_code">IAXIS00234</string>
-    <string name="label_query">If you have any querres, write to us at</string>
+    <string name="label_query">If you have any queries, write to us at</string>
     <string name="action_email">  <u>service@mayacare.com</u></string>
 
     <!--<string "Enqury Form"-->
@@ -245,6 +236,23 @@
 
     <!--<string "Our Volunteers"-->
     <string name="label_volunteering">To know more about Volunteering"</string>
+    <string name="dialog_title_services">Select Services</string>
+    <string name="dialog_action_select">SELECT</string>
+
+    <string-array name="array_services">
+        <item>Bank</item>
+        <item>Domestic</item>
+        <item>IT</item>
+        <item>Medical</item>
+        <item>Aide</item>
+        <item>Utility</item>
+        <item>Directory Services</item>
+    </string-array>
+
+    <string name="dialog_request_confirm">Your request for Volunteer has been submitted. You will
+        be notified once volunteer is assigned.\nYour Request number is : <b><u>#%d</u></b></string>
+    <string name="lbl_request_id">#%d</string>
+    <string name="lbl_version">%1$s(%2$d)</string>
     <string name="action_volunteering_click_here">Click Here"</string>
     <string name="label_volunteer">To become a Volunteer</string>
     <string name="action_volunteer_click_here">Click Here"</string>

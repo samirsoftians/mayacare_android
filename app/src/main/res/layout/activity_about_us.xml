@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_toolbar" />
+    <include layout="@layout/layout_toolbar"/>
 
     <TextView
         android:id="@+id/txt_about_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/abl_toolbar"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/m_16"
         android:layout_marginTop="18dp"
         android:text="@string/about_us_first_paragraph"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/txt_about_us_second"
@@ -22,9 +24,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_about_us"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/m_16"
         android:layout_marginTop="20dp"
         android:text="@string/about_us_second_paragraph"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
 
 </RelativeLayout>

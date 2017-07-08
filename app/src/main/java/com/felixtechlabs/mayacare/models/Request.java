@@ -1,5 +1,6 @@
 package com.felixtechlabs.mayacare.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -7,9 +8,9 @@ import java.util.ArrayList;
  * Created by rohan on 4/7/17.
  */
 
-public class Request {
+public class Request implements Serializable {
 
-    private int requestId;
+    private long requestId;
 
     private String requestKey;
 
@@ -31,12 +32,18 @@ public class Request {
 
     private String comments;
 
+    private int status;
 
-    public int getRequestId() {
+    private String assignedToUid;
+
+    private long requestSortOrder;
+
+
+    public long getRequestId() {
         return requestId;
     }
 
-    public void setRequestId(int requestId) {
+    public void setRequestId(long requestId) {
         this.requestId = requestId;
     }
 
@@ -118,5 +125,29 @@ public class Request {
 
     public void setComments(String comments) {
         this.comments = comments;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getAssignedToUid() {
+        return assignedToUid;
+    }
+
+    public void setAssignedToUid(String assignedToUid) {
+        this.assignedToUid = assignedToUid;
+    }
+
+    public long getRequestSortOrder() {
+        return requestSortOrder;
+    }
+
+    public void setRequestSortOrder(long requestSortOrder) {
+        this.requestSortOrder = requestSortOrder;
     }
 }

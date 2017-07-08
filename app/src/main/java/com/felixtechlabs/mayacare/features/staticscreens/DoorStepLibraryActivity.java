@@ -16,8 +16,7 @@ public class DoorStepLibraryActivity extends MCBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setTitle("Door Stap Library");
+        setTitle("Door Step Library");
         enableHome();
 
     }

@@ -1,25 +1,41 @@
 package com.felixtechlabs.mayacare.features.dashboard;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.felixtechlabs.mayacare.R;
+import com.felixtechlabs.mayacare.features.request.NewRequestActivity;
+
+import butterknife.OnClick;
 
 /**
  * Created by ftl on 30/6/17.
  */
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends DashboardBaseFragment {
 
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater,
-                             @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    protected Fragment getFragment() {
+        return this;
+    }
+
+    @Override
+    protected void start() {
+
+    }
+
+    @OnClick({R.id.txt_request, R.id.imv_request})
+    void onClickRequest() {
+        startNewScreen(NewRequestActivity.class);
+    }
+
+    @OnClick({R.id.txt_services, R.id.imv_services})
+    void onClickServices() {
+
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.fragment_home;
     }
 }

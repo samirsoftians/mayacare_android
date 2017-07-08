@@ -18,7 +18,7 @@ public class FAQsActivity extends MCBaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle("F.A.Q's");
+        setTitle("F.A.Q");
         enableHome();
 
     }

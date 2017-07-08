@@ -15,8 +15,8 @@ import com.felixtechlabs.mayacare.features.authentication.LaunchControlActivity;
 import com.felixtechlabs.mayacare.models.Consumer;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -141,6 +141,28 @@ public class MCUtility {
     }
 
     /**
+     * Saving address to preferences
+     *
+     * @param context - Context of calling activity
+     * @param address - Full address to store
+     */
+    public static void saveAddress(Context context, String address) {
+        MCPreferences.get(context)
+                .saveString(MCPreferences.Keys.USER_ADDRESS, address);
+    }
+
+    /**
+     * Getting address from preferences
+     *
+     * @param context - Context of calling activity
+     * @return - String address
+     */
+    public static String getAddress(Context context) {
+        return MCPreferences.get(context)
+                .getString(MCPreferences.Keys.USER_ADDRESS);
+    }
+
+    /**
      * Saving profile photo url from preferences
      *
      * @param context         - Context of calling activity
@@ -168,12 +190,29 @@ public class MCUtility {
      * @param context  - caller activity
      * @param consumer - User object
      */
-    public static void saveUserDetails(Context context, Consumer consumer) {
-        MCUtility.saveUID(context, consumer.getId());
-        MCUtility.saveFullName(context, consumer.getFullName());
-        MCUtility.saveProfilePhotoUrl(context, consumer.getProfilePictureUrl());
-        MCUtility.saveMobile(context, consumer.getMobileNumber());
-        MCUtility.saveEmail(context, consumer.getEmail());
+    public static void saveConsumer(Context context, Consumer consumer) {
+        saveUID(context, consumer.getId());
+        saveFullName(context, consumer.getFullName());
+        saveProfilePhotoUrl(context, consumer.getProfilePictureUrl());
+        saveMobile(context, consumer.getMobileNumber());
+        saveEmail(context, consumer.getEmail());
+        saveAddress(context, consumer.getAddress());
+    }
+
+    /**
+     * Get Consumer details from preferences
+     *
+     * @param context - Context
+     * @return - Consumer object
+     */
+    public static Consumer getConsumer(Context context) {
+        Consumer consumer = new Consumer();
+        consumer.setFullName(getFullName(context));
+        consumer.setMobileNumber(getMobile(context));
+        consumer.setEmail(getEmail(context));
+        consumer.setProfilePictureUrl(getProfilePhotoUrl(context));
+        consumer.setAddress(getAddress(context));
+        return consumer;
     }
 
     /**
@@ -230,41 +269,59 @@ public class MCUtility {
     /**
      * Method to get formatted date for post
      *
-     * @param milliSeconds
-     * @return - Formatted date
-     */
-    public static String getDisplayDate(long milliSeconds) {
-        Date date = new Date(milliSeconds);
-        String now = DateFormat.getDateInstance().format(new Date());
-        String postDate = new SimpleDateFormat("MMM dd, yyyy").format(date);
-
-        if (now.equalsIgnoreCase(postDate)) {
-            String time = new SimpleDateFormat("hh:mm a").format(date);
-            return "Today at " + time;
-        } else {
-            return new SimpleDateFormat("MMM dd, yyyy  hh:mm a").format(date);
-        }
-    }
-
-    /**
-     * Method to get formatted date for post
-     *
      * @param milliSeconds - time to format
      * @return - Formatted date
      */
-    public static String getDisplayDateComment(long milliSeconds) {
+    public static String getDisplayDateTime(long milliSeconds) {
         return new SimpleDateFormat("dd/MM/yyyy hh:mm a").format(new Date(milliSeconds));
     }
 
 
     /**
-     * Method to get formatted date for event
+     * Method to get formatted date
      *
      * @param milliSeconds - time to format
      * @return - Formatted date
      */
-    public static String getOnlyDisplayDate(long milliSeconds) {
+    public static String getDisplayDate(long milliSeconds) {
         return new SimpleDateFormat("dd/MM/yyyy").format(new Date(milliSeconds));
+    }
+
+    /**
+     * Method to get formatted time for event
+     *
+     * @param milliSeconds - time to format
+     * @return - Formatted date
+     */
+    public static String getDisplayTime(long milliSeconds) {
+        return new SimpleDateFormat("hh:mm a").format(new Date(milliSeconds));
+    }
+
+    public static String getStringFromList(ArrayList<String> list) {
+        String finalString = "";
+        for (String value : list) {
+            int index = list.indexOf(value);
+            if (index == list.size() - 1) {
+                finalString = finalString.concat(value);
+            } else {
+                finalString = finalString.concat(value).concat(", ");
+            }
+        }
+
+        return finalString;
+    }
+
+    public static String getStatusString(int status) {
+        switch (status) {
+            case MCConstants.RequestStatusInt.PENDING:
+                return MCConstants.RequestStatus.PENDING;
+            case MCConstants.RequestStatusInt.ASSIGNED:
+                return MCConstants.RequestStatus.ASSIGNED;
+            case MCConstants.RequestStatusInt.COMPLETED:
+                return MCConstants.RequestStatus.COMPLETED;
+            default:
+                return MCConstants.RequestStatus.PENDING;
+        }
     }
 
 }
