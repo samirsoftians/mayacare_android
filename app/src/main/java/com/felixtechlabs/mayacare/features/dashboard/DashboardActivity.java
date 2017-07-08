@@ -59,6 +59,7 @@ public class DashboardActivity extends MCBaseActivity {
         super.onCreate(savedInstanceState);
         setUpTabs();
         init();
+        setTitle("Home");
         setUpNavDrawer();
     }
 

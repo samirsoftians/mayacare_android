@@ -161,6 +161,10 @@ public class NewRequestActivity extends MCBaseActivity {
                 int index = mRequest.getServices().indexOf(service);
                 selectedIndices[index] = services.indexOf(service);
             }
+            mCalendar.setTimeInMillis(mRequest.getRequestDateTime());
+            selectedServices = new ArrayList<String>();
+            selectedServices.clear();
+            selectedServices.addAll(mRequest.getServices());
         }
     }
 
@@ -193,6 +197,8 @@ public class NewRequestActivity extends MCBaseActivity {
             request.setRequestedAt(System.currentTimeMillis());
             request.setComments(edtComments.getText().toString());
             request.setServices(selectedServices);
+            request.setRequesterId(MCUtility.getUid(this));
+            request.setStatus(MCConstants.RequestStatusInt.PENDING);
             Intent requestIntent = getNewIntent(ReviewRequestActivity.class);
             requestIntent.putExtra(MCConstants.KEY_REQUEST_OBJECT, request);
             startActivity(requestIntent);

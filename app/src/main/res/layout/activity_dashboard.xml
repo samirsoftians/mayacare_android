@@ -6,7 +6,6 @@
     android:id="@+id/nav_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
     android:fitsSystemWindows="true">
 
     <RelativeLayout
@@ -55,7 +54,7 @@
         app:headerLayout="@layout/layout_drawer_header"
         app:itemBackground="@drawable/nav_background_list"
         app:itemTextAppearance="@style/MCCustomTabTitle"
-        app:itemTextColor="@color/colorGrey"
+        app:itemTextColor="@drawable/nav_title_color_list"
         app:menu="@menu/menu_navigation_drawer"/>
 
 </android.support.v4.widget.DrawerLayout>

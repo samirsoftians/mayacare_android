@@ -311,4 +311,17 @@ public class MCUtility {
         return finalString;
     }
 
+    public static String getStatusString(int status) {
+        switch (status) {
+            case MCConstants.RequestStatusInt.PENDING:
+                return MCConstants.RequestStatus.PENDING;
+            case MCConstants.RequestStatusInt.ASSIGNED:
+                return MCConstants.RequestStatus.ASSIGNED;
+            case MCConstants.RequestStatusInt.COMPLETED:
+                return MCConstants.RequestStatus.COMPLETED;
+            default:
+                return MCConstants.RequestStatus.PENDING;
+        }
+    }
+
 }

@@ -16,8 +16,7 @@ public class ContactUsActivity extends MCBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setTitle("ContactUs");
+        setTitle("Contact Us");
         enableHome();
 
     }

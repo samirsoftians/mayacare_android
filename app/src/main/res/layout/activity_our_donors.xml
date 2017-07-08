@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/txt_our_donor"
         style="@style/MCTextView.OurDonorsTextView"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/abl_toolbar"
         android:text="@string/label_our_donor"/>
 
     <TextView
@@ -41,34 +41,80 @@
     <ImageView
         android:id="@+id/img_felix"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/txt_felix_tech_labs"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:scaleType="fitStart"
         android:src="@drawable/felix_logo"/>
 
     <TextView
         android:id="@+id/txt_lbl_donate_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/img_felix"
+        android:layout_marginLeft="@dimen/m_16"
+        android:layout_marginTop="@dimen/m_16"
         android:text="@string/label_Donate_us"
-        android:textSize="20dp"/>
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/txt_click_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/img_felix"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/m_16"
         android:layout_toRightOf="@+id/txt_lbl_donate_us"
         android:text="@string/action_click"
         android:textColor="@color/colorAccent"
-        android:textSize="20dp"/>
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_ftl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/m_16"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:gravity="center"
+        android:text="Felix TechLabs\nwww.felixtechlabs.com"
+        android:textColor="@color/colorGrey"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_developed_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_ftl"
+        android:gravity="center"
+        android:text="Developed By :"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/txt_lbl_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_version"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="@dimen/m_8"
+        android:gravity="center"
+        android:text="Version"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_developed_by"
+        android:layout_marginBottom="@dimen/m_8"
+        android:autoLink="all"
+        android:gravity="center"
+        android:text="v0.0.1(1)"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp"/>
 
 
 </RelativeLayout>
