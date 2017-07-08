@@ -228,6 +228,31 @@
     <string name="label_query">If you have any querres, write to us at</string>
     <string name="action_email">  <u>service@mayacare.com</u></string>
 
+    <!--<string "Enqury Form"-->
+    <string name="hint_enquiry_first_name">First Name</string>
+    <string name="hint_enquiry_last_name">Last Name</string>
+    <string name="hint_enquiry_city">City</string>
+    <string name="hint_enquiry_country">Country</string>
+    <string name="hint_enquiry_email">Email-Address</string>
+    <string name="hint_enquiry_phone_no">Phone Number</string>
+    <string name="hint_enquiry_nature_query">Nature Of Query</string>
+    <string name="action_enquiry_submit">Submit</string>
+
+    <!--<string "Our founders"-->
+
+    <string name="label_our_founders">Our Founders :</string>
+    <string name="label_honorary_advisers">Board of Honorary Advisers :</string>
+
+    <!--<string "Our Volunteers"-->
+    <string name="label_volunteering">To know more about Volunteering"</string>
+    <string name="action_volunteering_click_here">Click Here"</string>
+    <string name="label_volunteer">To become a Volunteer</string>
+    <string name="action_volunteer_click_here">Click Here"</string>
+    <string name="label_select_city">Select City"</string>
+
+
+
+
 </resources>
 
 

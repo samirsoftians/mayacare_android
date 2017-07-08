@@ -31,7 +31,6 @@
 
         <activity android:name=".features.staticscreens.AboutUsActivity"/>
         <activity android:name=".features.signup.SignUpActivity"/>
-
         <activity android:name=".features.staticscreens.OurPledgeActivity"/>
 
         <activity android:name=".features.staticscreens.FAQsActivity"/>
@@ -46,6 +45,12 @@
         <activity android:name=".features.staticscreens.OurDonorActivity"/>
 
         <activity android:name=".features.staticscreens.DonateActivity"/>
+
+        <activity android:name=".features.staticscreens.EnquiryFormActivity"/>
+
+        <activity android:name=".features.staticscreens.OurFoundersActivity"/>
+
+        <activity android:name=".features.staticscreens.OurVolunteersActivity"/>
 
     </application>
 
