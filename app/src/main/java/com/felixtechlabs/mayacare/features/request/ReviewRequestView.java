@@ -5,4 +5,12 @@ package com.felixtechlabs.mayacare.features.request;
  */
 
 public interface ReviewRequestView {
+
+    void showProgress(String message);
+
+    void dismissProgress();
+
+    void handleRequestSuccess(long requestId);
+
+    void handleRequestFailure(String errorMsg);
 }

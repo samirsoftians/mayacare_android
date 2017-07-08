@@ -45,6 +45,14 @@ public class MCDialogUtility {
 
     }
 
+    /**
+     * Get services selector dialog
+     *
+     * @param context                 - Context of calling activity
+     * @param selectedIndices         - already selected options
+     * @param listCallbackMultiChoice - callback for action
+     * @return - Material Dialog object
+     */
     public static MaterialDialog getServicesDialog(Context context,
                                                    Integer[] selectedIndices,
                                                    MaterialDialog.ListCallbackMultiChoice
@@ -54,5 +62,16 @@ public class MCDialogUtility {
                 .items(R.array.array_services)
                 .itemsCallbackMultiChoice(selectedIndices, listCallbackMultiChoice)
                 .positiveText(R.string.dialog_action_select).build();
+    }
+
+    public static MaterialDialog getSingleButtonInfoDialog(Context context, String message,
+                                                           MaterialDialog.SingleButtonCallback
+                                                                   singleButtonCallback) {
+        return new MaterialDialog.Builder(context)
+                .title(R.string.dialog_title_information)
+                .content(message)
+                .positiveText("Okay")
+                .onPositive(singleButtonCallback)
+                .build();
     }
 }

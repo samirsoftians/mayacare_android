@@ -1,6 +1,7 @@
 package com.felixtechlabs.mayacare.features.request;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
 import com.felixtechlabs.mayacare.models.Request;
 import com.felixtechlabs.mayacare.util.MCConstants;
+import com.felixtechlabs.mayacare.util.MCDialogUtility;
 import com.felixtechlabs.mayacare.util.MCUtility;
 
 import butterknife.BindView;
@@ -19,7 +21,7 @@ import butterknife.OnClick;
  * Created by rohan on 7/7/17.
  */
 
-public class ReviewRequestActivity extends MCBaseActivity {
+public class ReviewRequestActivity extends MCBaseActivity implements ReviewRequestView {
 
     @BindView(R.id.txt_full_name)
     TextView txtFullName;
@@ -44,6 +46,10 @@ public class ReviewRequestActivity extends MCBaseActivity {
 
     private Request mRequest;
 
+    private ProgressDialog mProgressDialog;
+
+    private ReviewRequestPresenter mReviewRequestPresenter;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +58,7 @@ public class ReviewRequestActivity extends MCBaseActivity {
             finish();
             return;
         }
+        mReviewRequestPresenter = new ReviewRequestPresenterImpl(this);
         enableHome();
         setTitle("Review Request");
         showData();
@@ -77,7 +84,7 @@ public class ReviewRequestActivity extends MCBaseActivity {
 
     @OnClick(R.id.btn_confirm)
     void onClickConfirm() {
-
+        mReviewRequestPresenter.submitRequest(mRequest);
     }
 
     @Override
@@ -93,5 +100,38 @@ public class ReviewRequestActivity extends MCBaseActivity {
     @Override
     public boolean isToolbarPresent() {
         return true;
+    }
+
+    @Override
+    public void showProgress(String message) {
+        mProgressDialog = new ProgressDialog(this);
+        mProgressDialog.setMessage(message);
+        mProgressDialog.setCancelable(false);
+        mProgressDialog.show();
+    }
+
+    @Override
+    public void dismissProgress() {
+        if (mProgressDialog != null && !isFinishing()) {
+            mProgressDialog.dismiss();
+        }
+    }
+
+    @Override
+    public void handleRequestSuccess(long requestId) {
+        MCDialogUtility
+                .getSingleButtonInfoDialog(this,
+                        getString(R.string.dialog_request_confirm, requestId),
+                        (dialog, which) -> finish()).show();
+    }
+
+    @Override
+    public void handleRequestFailure(String errorMsg) {
+        showToast(errorMsg);
+    }
+
+    @Override
+    public void onBackPressed() {
+        onClickEdit();
     }
 }

@@ -27,6 +27,7 @@ public class DatabaseReferenceManager {
         static final String CONSUMERS = "consumers";
         static final String REQUESTS = "requests";
         static final String ENQUIRIES = "enquiries";
+        static final String REQUEST_ID = "request_id";
     }
 
     /**
@@ -72,8 +73,18 @@ public class DatabaseReferenceManager {
      *
      * @return - Requests database reference
      */
-    public DatabaseReference getRequestsReference() {
-        return getRoot().child(ReferenceKeys.REQUESTS);
+    public DatabaseReference getRequestsReference(String uid) {
+        return getRoot().child(ReferenceKeys.REQUESTS).child(ReferenceKeys.CONSUMERS).child(uid);
+    }
+
+
+    /**
+     * Method to get Request ID reference
+     *
+     * @return - Request ID database reference
+     */
+    public DatabaseReference getRequestIdReference() {
+        return getRoot().child(ReferenceKeys.REQUEST_ID);
     }
 
     /**

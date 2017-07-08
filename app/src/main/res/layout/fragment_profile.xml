@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txt_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Unable to fetch profile data"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="invisible"/>
+
+    <ScrollView
+        android:id="@+id/scv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rel_profile_header"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorAccent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_profile_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_add_photo"/>
+
+                <TextView
+                    android:id="@+id/txt_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/civ_profile_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/m_16"
+                    android:text="Rohan Peshkar"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_mobile"
+                style="@style/RelProfileItem"
+                android:layout_below="@+id/rel_profile_header">
+
+                <TextView
+                    android:id="@+id/txt_lbl_mobile"
+                    style="@style/MCTextView.ProfileLabel"
+                    android:text="Mobile Number"/>
+
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    style="@style/MCTextView.ProfileValue"
+                    android:layout_below="@+id/txt_lbl_mobile"
+                    android:background="@color/colorWhite"
+                    android:enabled="false"
+                    android:maxLength="10"
+                    android:text="9763100111"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_email"
+                style="@style/RelProfileItem"
+                android:layout_below="@+id/rel_mobile">
+
+                <TextView
+                    android:id="@+id/txt_lbl_email"
+                    style="@style/MCTextView.ProfileLabel"
+                    android:text="Email"/>
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    style="@style/MCTextView.ProfileValue"
+                    android:layout_below="@+id/txt_lbl_email"
+                    android:background="@color/colorWhite"
+                    android:enabled="false"
+                    android:inputType="textWebEditText"
+                    android:maxLines="1"
+                    android:text="rohan@ftl.com"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_address"
+                style="@style/RelProfileItem"
+                android:layout_below="@+id/rel_email">
+
+                <TextView
+                    android:id="@+id/txt_lbl_address"
+                    style="@style/MCTextView.ProfileLabel"
+                    android:text="Address"/>
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    style="@style/MCTextView.ProfileValue"
+                    android:layout_below="@+id/txt_lbl_address"
+                    android:background="@color/colorWhite"
+                    android:enabled="false"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:text="Address "/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
