@@ -3,17 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <include layout="@layout/layout_toolbar" />
+    <include layout="@layout/layout_toolbar"
+        android:id="@+id/include" />
 
 
 
  <android.support.v7.widget.RecyclerView
-     android:layout_below="@+id/toolbar"
      android:layout_height="wrap_content"
      android:layout_width="wrap_content"
-     android:layout_marginTop="@dimen/m_16"
-     android:layout_marginLeft="@dimen/m_16"
-     android:id="@+id/rev_our_volunteer" />
+     android:id="@+id/rev_our_volunteer"
+     android:layout_below="@+id/include"
+     android:layout_centerInParent="true"
+     android:layout_above="@+id/rel_bottom_label" />
 
     <RelativeLayout
         android:id="@+id/rel_bottom_label"

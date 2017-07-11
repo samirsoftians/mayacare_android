@@ -24,7 +24,6 @@ public class OurFoundersActivity extends MCBaseActivity {
     OurFoundersAdapter ourFoundersAdapter;
     BoardOfAdvisersAdapter boardOfAdvisersAdapter;
     private List<FounderDataModel> ourFoundersList,advisersList;
-//    private List<FounderDataModel> advisersList;
 
 
     @Override
@@ -142,7 +141,7 @@ public class OurFoundersActivity extends MCBaseActivity {
     }
 
     @Override
-    public boolean isToolbarPresent() {
+    public boolean isToolbarPresent()  {
         return true;
     }
 }

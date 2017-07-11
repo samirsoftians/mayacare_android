@@ -33,4 +33,6 @@ public class OurVolunteersDataModel {
     public void setVolunteerDesignation(String volunteerDesignation) {
         this.volunteerDesignation = volunteerDesignation;
     }
+
+
 }

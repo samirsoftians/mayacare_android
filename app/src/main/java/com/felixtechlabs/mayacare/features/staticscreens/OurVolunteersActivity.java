@@ -41,7 +41,7 @@ public class OurVolunteersActivity extends MCBaseActivity {
         volunteerRecyclerView.setLayoutManager(gridLayoutManager);
         volunteerRecyclerView.setAdapter(volunteerAdapter);
 
-       }
+    }
 
 
     public List<OurVolunteersDataModel> volunteerList() {

@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 
 import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.request.NewRequestActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.ServicesActivity;
 
 import butterknife.OnClick;
 
@@ -31,6 +32,8 @@ public class HomeFragment extends DashboardBaseFragment {
 
     @OnClick({R.id.txt_services, R.id.imv_services})
     void onClickServices() {
+        startNewScreen(ServicesActivity.class);
+
 
     }
 

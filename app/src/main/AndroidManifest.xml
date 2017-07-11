@@ -75,6 +75,8 @@
             android:name=".features.request.ReviewRequestActivity"
             android:parentActivityName=".features.request.NewRequestActivity"/>
 
+        <activity android:name=".features.staticscreens.ServicesActivity"/>
+
     </application>
 
 </manifest>
