@@ -77,6 +77,8 @@
 
         <activity android:name=".features.staticscreens.ServicesActivity"/>
 
+        <activity android:name=".volunteer.login.VolunteerLoginActivity"/>
+
     </application>
 
 </manifest>

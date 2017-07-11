@@ -54,7 +54,8 @@
 
     <string name="radio_yes">Yes</string>
     <string name="radio_no">No</string>
-    <string name="lbl_personal_details">Welcome to MayaCare.\nPlease Enter the following\ndetails to help us serve you better.</string>
+    <string name="lbl_personal_details">Welcome to MayaCare.
+        \nPlease Enter the following\ndetails to help us serve you better.</string>
     <string name="hint_date_of_birth">Date Of Birth (dd/mm/yyyy)</string>
     <string name="hint_address">Residential Address</string>
     <string name="lbl_correspondence_details">Address Details</string>
@@ -258,6 +259,10 @@
     <string name="action_volunteer_click_here">Click Here"</string>
     <string name="label_select_city">Select City"</string>
 
+    <!--<string "Volunteer login page"-->
+
+    <string name="label_volunteer_title">VOLUNTEER</string>
+    <string name="label_volunteer_reg">Want to be Volunteer?</string>
 
 
 
