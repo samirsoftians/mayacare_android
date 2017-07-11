@@ -1,19 +1,11 @@
 package com.felixtechlabs.mayacare.features.staticscreens;
 
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.view.LayoutInflater;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
-import com.felixtechlabs.mayacare.util.MCConstants;
-
-import butterknife.BindView;
 
 /**
  * Created by ftl on 3/7/17.
@@ -22,17 +14,13 @@ import butterknife.BindView;
 public class AboutUsActivity extends MCBaseActivity {
 
 
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setTitle("About Us");
+        setTitle(getString(R.string.title_about_us));
         enableHome();
 
     }
-
 
 
     @Override

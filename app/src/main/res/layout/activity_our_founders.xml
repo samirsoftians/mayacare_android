@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/scrollView">
-
 <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <include layout="@layout/layout_toolbar" />
 
-    <TextView
-        android:id="@+id/txt_lbl_our_founders"
+    <include layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/m_16"
-        android:textSize="20dp"
-        android:layout_below="@+id/toolbar"
-        android:textColor="@color/colorAccent"
-        android:text="@string/label_our_founders"/>
+        android:layout_below="@+id/abl_toolbar">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rev_our_founders"
-        android:nestedScrollingEnabled="false"
-        android:layout_marginLeft="@dimen/m_16"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/txt_lbl_our_founders">
-    </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-     <TextView
-        android:id="@+id/txt_lbl_board_af_advisers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         android:layout_margin="@dimen/m_16"
+            <TextView
+                android:id="@+id/txt_lbl_our_founders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_margin="@dimen/m_16"
+                android:text="@string/label_our_founders"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
 
-         android:layout_below="@+id/rev_our_founders"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/label_honorary_advisers"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rev_our_founders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lbl_our_founders"
+                android:layout_marginLeft="@dimen/m_16"
+                android:layout_marginRight="@dimen/m_16"
+                android:nestedScrollingEnabled="false">
+            </android.support.v7.widget.RecyclerView>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rev_board_af_advisers"
-        android:nestedScrollingEnabled="false"
-        android:layout_marginLeft="@dimen/m_16"
-        android:layout_below="@+id/txt_lbl_board_af_advisers"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        >
-    </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/txt_lbl_board_af_advisers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rev_our_founders"
+                android:layout_margin="@dimen/m_16"
+                android:text="@string/label_honorary_advisers"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rev_board_of_advisers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lbl_board_af_advisers"
+                android:layout_marginLeft="@dimen/m_16"
+                android:layout_marginRight="@dimen/m_16"
+                android:nestedScrollingEnabled="false"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
-
-</android.support.v4.widget.NestedScrollView>
