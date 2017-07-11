@@ -11,12 +11,12 @@
 
     <!--<string "our_pledge"-->
     <string name="page_our_pledge">
-        Maya Care aims to fulfil the growing need for
+        MayaCARE aims to fulfil the growing need for
         enhancing the comfort of senior citizens living in India.
         During our interactions with senior citizens,
-        each of us at Maya CARE pledge to conduct our
+        each of us at MayaCARE pledge to conduct our
         duties based on these three simple values:
-        I don the identity of a Maya CARE associate with pride.
+        I don the identity of a MayaCARE associate with pride.
         With the faith that today
         Will be a turning point in my life
         The day I chose to assume responsibility for a future
@@ -54,7 +54,7 @@
 
     <string name="radio_yes">Yes</string>
     <string name="radio_no">No</string>
-    <string name="lbl_personal_details">Welcome to MayaCare.\nPlease Enter the following\ndetails to help us serve you better.</string>
+    <string name="lbl_personal_details">Welcome to MayaCARE.\nPlease Enter the following\ndetails to help us serve you better.</string>
     <string name="hint_date_of_birth">Date Of Birth (dd/mm/yyyy)</string>
     <string name="hint_address">Residential Address</string>
     <string name="lbl_correspondence_details">Address Details</string>
@@ -85,24 +85,24 @@
 
 
     <string name="about_us_first_paragraph">
-        Founded in 2009, Maya CARE is supported through
+        Founded in 2009, MayaCARE is supported through
         personal funds by working professionals – Abhay
-        Joshi and his wife Manjiri (Gokhale) Joshi. Maya
-        CARE services are available FREE of charge. However,
+        Joshi and his wife Manjiri (Gokhale) Joshi. MayaCARE
+        services are available FREE of charge. However,
         appreciation in the form of voluntary donations
         from individuals/groups/companies is welcome.</string>
 
     <string name="about_us_second_paragraph">
-        Maya CARE has a network of co-ordinators and
+        MayaCARE has a network of co-ordinators and
         volunteers running help lines in Mumbai and Pune.
-        Maya CARE volunteers include college students,
+        MayaCARE volunteers include college students,
         homemakers, working professionals and active senior
         citizens who visit senior citizens in their own homes
         to provide services. None of us can ever replace a family
         member. But as professionals struggle to meet the demands
-        of an active work life, each of us at Maya CARE have pledged
+        of an active work life, each of us at MayaCARE have pledged
         to make up for their absence with integrity,
-        responsibility and patience.</string>
+        responsibility and patience.\n\nVisit website www.mayacare.com for more details.</string>
 
     <string name="val_msg_valid_email">Enter valid email</string>
     <string name="val_msg_empty_password">Enter password</string>
@@ -118,56 +118,56 @@
     <string name="dialog_title_information">Information</string>
     <string name="dialog_action_yes">Yes</string>
     <string name="dialog_action_no">No</string>
-    <string name="dialog_message_logout">Do you want to logout of MayaCare App?</string>
+    <string name="dialog_message_logout">Do you want to logout of MayaCARE App?</string>
 
 
     <!--<string "F.A.Q',s"-->
     <string name="title_first_faqs">
-        Does Maya Care provide nurses/cooks?
-        Can Maya Care guarantee emergency medical care?</string>
+        Does MayaCARE provide nurses/cooks?
+        Can MayaCARE guarantee emergency medical care?</string>
 
     <string name="first_paragraph_faqs">
-        Maya CARE does not provide emergency,
+        MayaCARE does not provide emergency,
         ayah/nursing or domestic servant services.
-        Maya CARE volunteers are educated working/retired professionals,
+        MayaCARE volunteers are educated working/retired professionals,
         homemakers or students who gladly perform all the activities a family
-        member would. Thus, Maya CARE volunteers sit with patients in hospital/at home, read to them,
+        member would. Thus, MayaCARE volunteers sit with patients in hospital/at home, read to them,
         give medicine/help with physiotherapy exercises under medical advice.
         For a comprehensive list of services, click  here .
         Please note that these  terms and conditions
         are part of our attempt to ensure your safety
-        during your association with Maya Care.</string>
+        during your association with MayaCARE.</string>
 
     <string name="title_second_faqs">
-        Does Maya Care provide services to
+        Does MayaCARE provide services to
         disabled persons who are not senior citizens?</string>
 
     <string name="second_paragraph_faqs">
     Yes, disabled persons could also avail of our services.</string>
 
     <string name="title_third_faqs">
-        What do I pay Maya CARE?</string>
+        What do I pay MayaCARE?</string>
 
     <string name="third_paragraph_faqs">
-        Maya CARE services are available FREE of charge. However,
-        if you wish to make a voluntary donation to support the cause of Maya CARE,
+        MayaCARE services are available FREE of charge. However,
+        if you wish to make a voluntary donation to support the cause of MayaCARE,
         payment is accepted via bank transfer or account/payee
-        cheques in the name of ‘Maya Care Foundation’ only.</string>
+        cheques in the name of ‘MayaCARE Foundation’ only.</string>
 
     <string name="title_four_faqs">
            How can I trust the service professional visiting my home?</string>
 
     <string name="four_paragraph_faqs">
-        It is mandatory for Maya CARE volunteers to carry a photo ID card bearing
-        their name and the Maya Care logo. In case a volunteer is not carrying his/her
+        It is mandatory for MayaCARE volunteers to carry a photo ID card bearing
+        their name and the MayaCARE logo. In case a volunteer is not carrying his/her
         I-card, kindly call our helpline. In the event that this was to occur,
         we apologize for the inconvenience caused to you. Please note that these
         terms and conditions  are part of our attempt to ensure your safety during
-        your association with Maya Care. Maya Care volunteers are expected to conduct
+        your association with MayaCARE. MayaCARE volunteers are expected to conduct
         interactions within the guest reception area/main door of the recipients’
         registered address. Recipients are requested to refrain from requesting volunteers
         to enter any other area of their homes or assist in any other tasks outside the purview
-        of Maya CARE services.</string>
+        of MayaCARE services.</string>
 
     <!--<string "Contact Us"-->
     <string name="label_india">India</string>
@@ -185,11 +185,11 @@
 
     <!--<string "Door step Library"-->
     <string name="label_door_step_lib">
-        Maya CARE offers door-step library services for senior citizens
+        MayaCARE offers door-step library services for senior citizens
         of Pune and Mumbai. The door-step library subscription is available
         at a monthly service charge of Rs 400/- along with a returnable deposit
         and fees of individual libraries suggested by individual senior citizens.
-        Maya CARE is not affiliated to any specific libraries.</string>
+        MayaCARE is not affiliated to any specific libraries.</string>
 
     <!--<string "Our Donor"-->
 
@@ -257,8 +257,6 @@
     <string name="label_volunteer">To become a Volunteer</string>
     <string name="action_volunteer_click_here">Click Here"</string>
     <string name="label_select_city">Select City"</string>
-
-
 
 
 </resources>

@@ -16,7 +16,7 @@ public class EnquiryFormActivity extends MCBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Enquiry Form");
+        setTitle(getString(R.string.title_enquiry_form));
         enableHome();
     }
 
