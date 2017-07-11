@@ -23,7 +23,7 @@
                 style="@style/MCTextView.FAQsTextView"
                 android:layout_below="@+id/abl_toolbar"
                 android:text="@string/title_first_faqs"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
             <TextView
