@@ -16,6 +16,9 @@ import android.widget.TextView;
 import com.felixtechlabs.mayacare.R;
 import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
 import com.felixtechlabs.mayacare.features.staticscreens.AboutUsActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.EnquiryFormActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.OurFoundersActivity;
+import com.felixtechlabs.mayacare.features.staticscreens.OurVolunteersActivity;
 import com.felixtechlabs.mayacare.features.staticscreens.ContactUsActivity;
 import com.felixtechlabs.mayacare.features.staticscreens.DoorStepLibraryActivity;
 import com.felixtechlabs.mayacare.features.staticscreens.FAQsActivity;
@@ -72,6 +75,10 @@ public class DashboardActivity extends MCBaseActivity {
 
         mNavItemMap = new HashMap<>();
         mNavItemMap.put(R.id.nav_item_about_us, getNewIntent(AboutUsActivity.class));
+        mNavItemMap.put(R.id.nav_item_enquiry, getNewIntent(EnquiryFormActivity.class));
+        mNavItemMap.put(R.id.nav_item_founders, getNewIntent(OurFoundersActivity.class));
+        mNavItemMap.put(R.id.nav_item_our_volunteers, getNewIntent(OurVolunteersActivity.class));
+
         mNavItemMap.put(R.id.nav_item_pledge, getNewIntent(OurPledgeActivity.class));
         mNavItemMap.put(R.id.nav_item_contact_us, getNewIntent(ContactUsActivity.class));
         mNavItemMap.put(R.id.nav_item_door_step, getNewIntent(DoorStepLibraryActivity.class));

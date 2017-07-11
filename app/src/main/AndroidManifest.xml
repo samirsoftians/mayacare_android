@@ -34,7 +34,6 @@
             android:parentActivityName=".features.dashboard.DashboardActivity"/>
 
         <activity android:name=".features.signup.SignUpActivity"/>
-
         <activity
             android:name=".features.staticscreens.OurPledgeActivity"
             android:parentActivityName=".features.dashboard.DashboardActivity"/>
@@ -63,6 +62,11 @@
             android:name=".features.staticscreens.DonateActivity"
             android:parentActivityName=".features.dashboard.DashboardActivity"/>
 
+        <activity android:name=".features.staticscreens.EnquiryFormActivity"/>
+
+        <activity android:name=".features.staticscreens.OurFoundersActivity"/>
+
+        <activity android:name=".features.staticscreens.OurVolunteersActivity"/>
         <activity
             android:name=".features.request.NewRequestActivity"
             android:parentActivityName=".features.dashboard.DashboardActivity"/>
@@ -70,6 +74,8 @@
         <activity
             android:name=".features.request.ReviewRequestActivity"
             android:parentActivityName=".features.request.NewRequestActivity"/>
+
+        <activity android:name=".features.staticscreens.ServicesActivity"/>
 
     </application>
 
