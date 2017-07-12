@@ -9,6 +9,10 @@
     <string name="action_login">Login</string>
     <string name="action_register_here">Register Here</string>
 
+
+    <!--<string "our_pledge"-->
+    <string name="title_services">Services</string>
+
     <!--<string "our_pledge"-->
     <string name="page_our_pledge">
         MayaCARE aims to fulfil the growing need for

@@ -12,73 +12,75 @@ import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 /**
  * Created by ftl on 10/7/17.
  */
 
 public class ServicesActivity extends MCBaseActivity {
 
-    RecyclerView servicesRecyclerView;
-    ServicesAdapter servicesAdapter;
-    private List<ServicesDataModel> servicesAdapterList;
+    @BindView(R.id.rev_services)
+    RecyclerView rvServices;
+
+    ServicesAdapter mServicesAdapter;
+
+    private ArrayList<ServicesDataModel> mServicesList;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setTitle("Services");
+        setTitle(getString(R.string.title_services));
         enableHome();
+        initRecyclerViews();
+    }
 
+    private void initRecyclerViews() {
 
-        servicesRecyclerView = (RecyclerView) findViewById(R.id.rev_services);
-        servicesAdapterList = servicesAdapterList();
-
-        servicesAdapter = new ServicesAdapter(servicesAdapterList);
+        mServicesList = new ArrayList<>();
+        mServicesAdapter = new ServicesAdapter(mServicesList);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(ServicesActivity.this, 2);
-        servicesRecyclerView.setLayoutManager(gridLayoutManager);
-        servicesRecyclerView.setAdapter(servicesAdapter);
+        rvServices.setLayoutManager(gridLayoutManager);
+        rvServices.setAdapter(mServicesAdapter);
 
-
+        setServicesData();
 
     }
 
-    private List<ServicesDataModel> servicesAdapterList() {
-
-        List<ServicesDataModel> servicesDataModels = new ArrayList<>();
-
+    private void setServicesData() {
+        mServicesList.clear();
         ServicesDataModel servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("Bank");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
         servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("Domestic");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
         servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("IT");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
         servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("Medical");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
         servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("Aide");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
         servicesDataModel = new ServicesDataModel();
         servicesDataModel.setServicesPhoto(R.drawable.services_img);
         servicesDataModel.setServicesName("Utility");
-        servicesDataModels.add(servicesDataModel);
+        mServicesList.add(servicesDataModel);
 
-
-        return servicesDataModels;
+        mServicesAdapter.notifyDataSetChanged();
     }
 
     @Override

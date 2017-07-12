@@ -12,75 +12,66 @@ import com.felixtechlabs.mayacare.features.base.MCBaseActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 /**
  * Created by ftl on 7/7/17.
  */
 
 public class OurVolunteersActivity extends MCBaseActivity {
 
-    RecyclerView volunteerRecyclerView;
+    @BindView(R.id.rev_our_volunteer)
+    RecyclerView rvVolunteer;
 
-    OurVolunteersAdapter volunteerAdapter;
-    private List<OurVolunteersDataModel> volunteerList;
+    OurVolunteersAdapter mOurVolunteerAdapter;
+
+    private ArrayList<OurVolunteersDataModel> mOurVolunteerList;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setTitle("Our Volunteers");
+        setTitle(getString(R.string.title_volunteers));
         enableHome();
+        initRecyclerViews();
+    }
 
-        volunteerRecyclerView = (RecyclerView) findViewById(R.id.rev_our_volunteer);
-
-
-        volunteerList = volunteerList();
-
-
-        volunteerAdapter = new OurVolunteersAdapter(volunteerList);
+    private void initRecyclerViews() {
+        mOurVolunteerList = new ArrayList<>();
+        mOurVolunteerAdapter = new OurVolunteersAdapter(mOurVolunteerList);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(OurVolunteersActivity.this, 2);
-        volunteerRecyclerView.setLayoutManager(gridLayoutManager);
-        volunteerRecyclerView.setAdapter(volunteerAdapter);
-
+        rvVolunteer.setLayoutManager(gridLayoutManager);
+        rvVolunteer.setAdapter(mOurVolunteerAdapter);
+        setVolunteerData();
     }
 
 
-    public List<OurVolunteersDataModel> volunteerList() {
-
-        List<OurVolunteersDataModel> volunteerDataModels = new ArrayList<>();
-
+    public void setVolunteerData() {
+        mOurVolunteerList.clear();
         OurVolunteersDataModel volunteerDataModel = new OurVolunteersDataModel();
         volunteerDataModel.setVolunteerProfilePhoto(R.drawable.volunteer_supriya);
         volunteerDataModel.setVolunteerName("Mrs Supiya dutt");
         volunteerDataModel.setVolunteerDesignation("New Dilhi & NCR");
-
-        volunteerDataModels.add(volunteerDataModel);
-
+        mOurVolunteerList.add(volunteerDataModel);
 
         volunteerDataModel = new OurVolunteersDataModel();
         volunteerDataModel.setVolunteerProfilePhoto(R.drawable.volunteer_karthik);
         volunteerDataModel.setVolunteerName("Karthik Ganapati");
         volunteerDataModel.setVolunteerDesignation("Chennai");
-
-        volunteerDataModels.add(volunteerDataModel);
-
+        mOurVolunteerList.add(volunteerDataModel);
 
         volunteerDataModel = new OurVolunteersDataModel();
         volunteerDataModel.setVolunteerProfilePhoto(R.drawable.volunteer_swapna);
         volunteerDataModel.setVolunteerName("Sapana navathe");
         volunteerDataModel.setVolunteerDesignation("New Dilhi & NCR");
-
-        volunteerDataModels.add(volunteerDataModel);
-
+        mOurVolunteerList.add(volunteerDataModel);
 
         volunteerDataModel = new OurVolunteersDataModel();
         volunteerDataModel.setVolunteerProfilePhoto(R.drawable.volunteer_sudhatai);
         volunteerDataModel.setVolunteerName("Sudha Ghokhale");
         volunteerDataModel.setVolunteerDesignation("New Dilhi & NCR");
+        mOurVolunteerList.add(volunteerDataModel);
 
-        volunteerDataModels.add(volunteerDataModel);
-
-
-        return volunteerDataModels;
+        mOurVolunteerAdapter.notifyDataSetChanged();
     }
 
     @Override
